@@ -1,0 +1,14 @@
+<!-- views/profile.ejs -->
+
+<h1>User Profile</h1>
+<div>
+  <p>Username: <%= profile.username %>
+  </p>
+  <p>Name: <%= profile.name %>
+  </p>
+  <p>Email: <%= profile.publicEmail %>
+  </p>
+  <p>Avatar:</p><img src="<%= profile.avatarUrl %>" alt="User Avatar" style="width: 100px; height: 100px;">
+  <p>Last Activity: <%= profile.lastActivityOn %>
+  </p>
+</div>

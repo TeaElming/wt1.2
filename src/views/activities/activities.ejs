@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Activities</title>
+</head>
+<body>
+    <h1>User Activities</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Action Name</th>
+                <th>Time</th>
+                <th>Target Title</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% activities.forEach(function(activity) { %>
+                <tr>
+                    <!-- Assuming each activity object has name, time, and type properties -->
+                    <td><%= activity.action_name || 'N/A' %></td>
+                    <td><%= activity.created_at || 'N/A' %></td>
+                    <td><%= activity.target_title || 'N/A' %></td>
+                    <td><%= activity.target_type || 'N/A' %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

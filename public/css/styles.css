@@ -1,0 +1,180 @@
+html {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: #d0f4de;
+  /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  /* Add spacing between h1 and nav */
+}
+
+nav {
+  display: flex;
+  margin-top: -12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0f4de;
+  /* Adjust as needed */
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #d0f4de;
+  /* Adjust as needed */
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+  /* Adjust spacing as needed */
+}
+
+main {
+  flex: 1;
+  background-color: #fcf6bd;
+  padding: 60px 15px;
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #d0f4de;
+}
+
+/* table design */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  border: 1px solid #a9def9;
+  margin: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+.form-check-input[disabled] {
+  opacity: 0.5;
+}
+
+/* Create issue */
+.form-control {
+  padding: 0.75rem 1.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Center the login-container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use the full height of the viewport */
+  width: 100%; /* Use the full width of the viewport */
+  position: absolute; /* Make it positioned absolutely to center it */
+  top: 0;
+  left: 0;
+}
+
+/* Style for the login button */
+.login-button {
+  display: inline-block; /* Allows setting dimensions */
+  background-color: #4CAF50; /* Example background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the text bold */
+}
+
+.group-box {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.project-box {
+  background-color: orange;
+  border: 2px dotted black;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project-box .project-header, .project-box .commit-info {
+  display: flex;
+  align-items: center;
+}
+
+.project-avatar, .author-avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Adds some spacing between the image and the text */
+}
+
+.project-header h3, .commit-info p {
+  margin: 0; /* Removes default margins from headings and paragraphs for better alignment */
+}
+
+
+img {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,22 @@
+<header>
+  <h1>WT1</h1>
+  <nav class="navbar <%= typeof hideHeader !== 'undefined' ? hideHeader ? 'hidden' : '' : '' %>">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="<%= baseURL %>home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%= baseURL %>profile/"> Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%= baseURL %>activities/"> Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%= baseURL %>groups/">Groups and Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%= baseURL %>logout/">Log Out</a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,5 @@
+# All Node modules
+node_modules
+
+# Local development environment
+.env

@@ -1,0 +1,40 @@
+<% groups.forEach(group=> { %>
+  <div class="group-box">
+    <h2><a href="<%= group.webUrl %>">
+        <%= group.name %>
+      </a></h2>
+    <% group.projects.forEach(project=> { %>
+      <div class="project-box">
+        <img src="<%= project.avatarUrl %>" alt="<%= project.name %>">
+        <h3><a href="<%= project.webUrl %>">
+            <%= project.name %>
+          </a></h3>
+        <p>Desccription: <%= project.description %>
+        </p>
+        <img
+        src="<%= project.lastCommit.author.avatarUrl %>"
+        alt="<%= project.lastCommit.author.name %>">
+        <p>Last Commit by: <%= project.lastCommit.author.name %> on <%= project.lastCommit.committedDate %>
+        </p>
+
+        </p>
+      </div>
+      <% }) %>
+        <% if (group.projectCount> 5) { %>
+          <div>
+            <p>Total number of projects: <%= group.projectCount %>
+            </p>
+            <button><s>View all projects</s></button>
+            <p><i>Not yet implemented</i></p>
+          </div>
+          <% } %>
+  </div>
+  <% }) %>
+    <% if (totalGroups> 5) { %>
+      <div>
+        <p>Total number of groups: <%= totalGroups %>
+        </p>
+        <button><s>View all groups</s></button>
+        <p><i>Not yet implemented</i></p>
+      </div>
+      <% } %>
